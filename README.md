@@ -1,97 +1,60 @@
-# Image Float - HTML/CSS Assignment
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Image float</title>
+		<style>
+			body {
+			    font-family: Arial, Helvetica, sans-serif;
+				font-size: 85%;
+				width: 650px;
+			    margin: 0 auto;
+				padding: 1em;
+			}
+			h2 {
+				color: #004e97;
+				margin-bottom: .5em;
+			}
+			img {
+				float: left;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			p {
+				line-height: 1.3;
+				margin: 0;
+			}
+			ul {
+				line-height: 1.3;
+				padding-left: 1em;
+				margin-top: .6em;
+				margin-left: 210px;
+			}
+			li {
+				margin-top: .3em;
+				margin-left: .5em;
+			}
+			#last { clear: left; }
+		</style>
+	</head>
 
-## Total Marks: 50
-
-### Objective
-
-Create a webpage that demonstrates CSS image floating.
-
-You will use HTML and CSS to reproduce the provided "Image Float" webpage.
-
-### Learning Outcomes
-
-After completing this assignment, you should be able to:
-
-- Create a structured HTML document.
-- Add and format headings and paragraphs.
-- Insert an accessible image.
-- Use CSS `float`.
-- Use CSS `clear`.
-- Format unordered lists.
-- Control margins, padding, width, and line height.
-
----
-
-## Requirements
-
-### HTML Requirements
-
-Your page must contain:
-
-1. A page title of `Image float`.
-2. One `<h2>` heading.
-3. Two `<p>` elements.
-4. One image.
-5. An unordered list.
-6. Exactly three `<li>` elements.
-7. An element with `id="last"`.
-8. Appropriate image `alt` text.
-9. Image width of 192 pixels.
-10. Image height of 128 pixels.
-
-### CSS Requirements
-
-Your CSS must include:
-
-- Arial, Helvetica, sans-serif font family.
-- Body font size of 85%.
-- Body width of 650px.
-- Body centered using `margin: 0 auto`.
-- Body padding of 1em.
-- Blue heading color.
-- Image floated to the left.
-- Image top and bottom margins of 10px.
-- Paragraph line height of 1.3.
-- List left margin of 210px.
-- `clear: left` for the final paragraph.
-- Appropriate list and paragraph spacing.
-
----
-
-## Marks
-
-| Category | Marks |
-|---|---:|
-| HTML document structure | 5 |
-| Heading | 5 |
-| Body styling | 7 |
-| Image and accessibility | 8 |
-| Image float | 10 |
-| Unordered list | 7 |
-| Clear property | 5 |
-| Spacing and typography | 3 |
-| **Total** | **50** |
-
----
-
-## Submission
-
-Modify:
-
-`starter/index.html`
-
-Do not modify:
-
-`tests/test_image_float.py`
-
-Commit and push your changes to GitHub.
-
-GitHub Actions will automatically grade your submission.
-
----
-
-## Expected Result
-
-The image should appear on the left, with the list positioned beside it.
-
-The final paragraph should appear below the floated image because it clears the left float.
+	<body>
+		<h2>Teach your students using the books the professionals use</h2>
+		<p>Although our books are written for professional programmers who need to master 
+		new job skills, there have always been instructors teaching job-oriented curricula
+		who&rsquo;ve adopted our books. For example, our books are used:</p>
+		<img src="images/students.jpg" alt="teacher and students" width="192" height="128" 
+		     longdesc="A teacher looking over the work of four students">
+		<ul>
+			<li>in college and university MIS programs that focus on providing students with
+			practical, real-world experience</li>
+			<li>by technical institutes and community colleges that focus on the skills that
+			employers are looking for</li>
+			<li>in Continuing Ed and Extension programs where the students are
+			professionals who are expanding their skills</li>
+		</ul>
+		<p id="last">So if your program fits one of those profiles, please take a look at our books.
+		I&rsquo;m confident you&rsquo;ll discover a new level of structure, clarity, and relevance 
+		that will benefit both you and your students.</p>
+	</body>
+</html>
